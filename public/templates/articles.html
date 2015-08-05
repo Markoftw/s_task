@@ -1,0 +1,11 @@
+<!--<div ng-controller="mainController">-->
+    <div class="row">
+        <div class="thumbnail pull-left" ng-repeat="clanek in clanki">
+            <img class='image-src' ng-src="{{ clanek.image | replaceSize }}"/>
+            <span class="label label-section">{{ clanek.section_name | getLastTitle | uppercase }}</span>
+            <b class="title">{{ clanek.title }}</b>
+            <button ng-disabled='isDisabled' ng-model="isDisabled" class="btn btn-xs fa fa-heart klik btn-buy btn-success" ng-class="{red: 'btn-danger'} [class_name]" type="submit" ng-click="addToFavs(clanek)"></button>
+            <!--<button class="btn btn-xs fa fa-heart klik btn-buy" ng-class="{true:'btn-danger'}[activeBtn == $index]" type="submit" ng-click="addToFavs(clanek, $index)"></button>-->
+            <!--<button class="btn btn-xs fa fa-heart klik btn-buy" ng-class="{on:b.state} [class_name]" type="submit" ng-click="addToFavs(clanek)">-->
+        </div>
+    </div>

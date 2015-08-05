@@ -1,0 +1,15 @@
+{
+  "name": "public",
+  "version": "0.0.0",
+  "authors": [
+    "Marko Smej <marko.smej@hotmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
